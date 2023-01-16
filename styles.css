@@ -1,0 +1,255 @@
+/* ######### Reused Elements ########## */
+
+html {
+  max-width: 100%;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1rem;
+}
+
+.fontFamily-theme {
+  font-family: "Cinzel Decorative", cursive;
+  opacity: 100%;
+}
+.fontFamily-secondary {
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.fontFamily-text {
+  color: black;
+  font-family: "Nanum Myeongjo", serif;
+  opacity: 100%;
+}
+
+.box-shadow {
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+/* -------------------------- */
+/* ######### Nav Bar ########## */
+
+.navbar-logo {
+  height: 8rem;
+}
+
+.navTag:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  color: white;
+}
+.bg-green {
+  /* background-color: darkgreen; */
+  background: rgb(2, 0, 36);
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(8, 89, 0, 1) 0%,
+    rgb(13, 153, 0) 50%,
+    rgba(8, 91, 0, 1) 100%
+  );
+}
+.navbar-nav a {
+  color: white;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-green {
+  color: darkgreen;
+}
+
+.fab {
+  font-size: 1.5rem;
+}
+
+/* -------------------------- */
+/* ######### Body ########## */
+
+.bi-chevron-down {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  text-align: center;
+  animation: bounce 1.5s infinite;
+  /* animation-timing-function: ease-out;
+*/
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 15px;
+  }
+  40% {
+    bottom: 0px;
+  }
+  60% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+/* -------------------------- */
+/* ######### pubPhotoSection ########## */
+.pubPhotoSection {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pubPhotoOne {
+  background-image: url("photos/pubOne.jpg");
+}
+.pubPhotoTwo {
+  background-image: url("photos/pubTwo.jpg");
+}
+
+.inner-text-container {
+  background-color: white;
+  margin-top: 80px;
+  text-align: center;
+  max-width: 70%;
+  opacity: 80%;
+  min-height: 300px;
+}
+
+.innerPaddingText {
+  opacity: 150%;
+  color: rgb(0, 0, 0);
+}
+
+/* -------------------------- */
+/* ######### Menu ########## */
+
+.menuImg {
+  width: 80%;
+}
+
+@media screen and (max-width: 770px) {
+  .menuImg {
+    width: 100%;
+  }
+}
+
+/* -------------------------- */
+/* ######### location ########## */
+.location p {
+  font-size: medium;
+}
+
+/* -------------------------- */
+/* ######### Modal ########## */
+
+.active-modal {
+  height: 50vh;
+}
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-section {
+  position: fixed;
+  top: 40%;
+  left: 42.5%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 1030;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.modal-section:hover {
+  cursor: auto;
+}
+
+.modal-section a:hover {
+  cursor: pointer;
+}
+
+/* .modal--container a {
+  font-size: 1.5rem;
+}
+.modal--container i {
+  font-size: 2rem;
+} */
+
+/* -------------------------- */
+/* ######### Intersectional Observers ########## */
+
+/* Remove arrow on Scroll */
+.remove {
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+/* Sections Appear on Scroll */
+.section--animated {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+
+/* Orange Fade in on Scroll */
+.fadeOrange {
+  color: orange;
+  transition: color 4s;
+}

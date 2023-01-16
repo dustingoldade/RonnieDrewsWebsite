@@ -1,0 +1,466 @@
+/* OLD */
+
+.centerContainer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fontFamilyHeading {
+  color: black;
+  font-family: "Cinzel Decorative", cursive;
+  opacity: 100%;
+}
+
+.fontFamilyText {
+  color: black;
+  font-family: "Nanum Myeongjo", serif;
+  opacity: 100%;
+}
+
+.marginBottom50px {
+  margin-bottom: 50px;
+}
+.marginTop50px {
+  margin-top: 50px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+/*SM ICONS AND ELEMENTS*/
+
+.tripadvisorIcon {
+  height: 2.2em;
+  color: black;
+}
+
+.fab {
+  font-size: 1.8em;
+  color: black;
+}
+.fa-angle-down {
+  font-size: 3rem;
+  color: black;
+  position: relative;
+  bottom: 0px;
+  display: block;
+  text-align: center;
+  animation: bounce 1.5s infinite;
+  /* animation-timing-function: ease-out;
+  
+*/
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 15px;
+  }
+  40% {
+    bottom: 0px;
+  }
+  60% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+/*END OF ELEMENTS*/
+
+/* ###################### */
+
+/* HEADER */
+
+/* ###################### */
+
+.headingGridContainer {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1rem;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.headingFlexContainerLeft {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  align-items: center;
+}
+
+.headingGridContainer--homeBtn {
+  margin-left: 2rem;
+}
+
+.emptyHeaderdiv {
+  background-color: white;
+  border-left: solid 1px white;
+  border-right: solid 2px white;
+}
+
+.headingFlexConainterRight {
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-left: solid 1px white;
+}
+
+.langSelection {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.langSelection p {
+  font-size: 1.25em;
+  padding: 0px 10px;
+  display: inline-block;
+}
+.langSelection__hyphen {
+  margin-top: -2px;
+}
+
+/* ###################### */
+
+/*HOME SECTION*/
+
+/* ###################### */
+
+.homeContainer {
+  margin-top: 80px;
+  max-width: 1200px;
+  display: grid;
+  gap: 4rem;
+  min-height: 80vh;
+}
+
+.homeContainer h1 {
+  display: block;
+  clear: both;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+  word-spacing: 1rem;
+  margin: 0 3rem;
+}
+
+.homeContainer h3 {
+  display: block;
+  text-align: center;
+}
+
+.main_logo {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ###################### */
+
+/*ABOUT US SECTION*/
+
+/* ###################### */
+
+.subHeading {
+  margin-top: -100;
+  height: 150px;
+  background-color: white;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.subHeading h1 {
+  font-size: 3em;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ###################### */
+
+/*ABOUT - PUBS
+
+/* ###################### */
+
+.pubPhotoContainer {
+  height: 600px;
+  width: 95%;
+  padding-left: 2.5%;
+  margin: 0;
+}
+
+.innerPaddingText {
+  padding: 50px;
+  font-size: 1em;
+  max-width: 500px;
+  min-height: 100px;
+  width: 40%;
+  background-color: #ffffffa6;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.pubPhotoOne {
+  background-image: url("photos/pubOne.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.pubPhotoTwo {
+  background-image: url("photos/pubTwo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* ###################### */
+
+/*MENU SECTION
+
+/* ###################### */
+
+.menuContainer {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.menu {
+  width: 95%;
+  height: 140vh;
+  background-color: white;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menuImg {
+  max-width: 95%;
+}
+
+/* ###################### */
+
+/*LOCATION SECTION
+
+/* ###################### */
+
+.hoursHeading {
+  color: black;
+  text-align: center;
+}
+
+.hoursContainer {
+  width: 80%;
+  max-width: 400px;
+  border-bottom: solid black 1px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.dayOfWeek {
+  text-align: left;
+}
+.hours {
+  text-align: right;
+}
+
+.locationSection {
+  padding-top: 100px;
+  height: 200px;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+.locationSection h1 {
+  padding-bottom: 20px;
+  font-size: 3em;
+}
+
+.locationInformationText {
+  /* color: black; */
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.mapContainer {
+  height: 500px;
+  width: 100%;
+}
+
+/* ###################### */
+
+/*FOOTER
+
+/* ###################### */
+
+.footerContainer {
+  text-align: center;
+  padding: 20px 0px;
+  color: black;
+}
+
+.navFooter {
+  display: none;
+}
+
+/* ###################### */
+
+/* Media Queries */
+
+/* ###################### */
+
+@media screen and (max-width: 950px) {
+  .headingGridContainer {
+    display: grid;
+    grid-template-columns: 50% 15% 35%;
+  }
+  .main_logo {
+    margin-top: 2rem;
+  }
+  .homeContainer {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .headingGridContainer {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .headingFlexContainerLeft {
+    padding: 10px 50px 10px 0px;
+    align-items: center;
+  }
+  .headingGridContainer--home {
+    margin-left: 3rem;
+  }
+
+  .navFooter {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 45px;
+    background-color: white;
+    margin-bottom: -52px;
+    border-bottom: solid 1px white;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transform: translateY(-100%);
+    box-shadow: 0 -1px 5px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  #bottomTripAdvisorIcon {
+    margin-bottom: -15px;
+  }
+
+  .navFooterFlex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer {
+    margin-bottom: 40px;
+  }
+
+  .emptyHeaderdiv {
+    display: none;
+  }
+
+  .headingFlexConainterRight {
+    display: none;
+  }
+
+  .langSelection {
+    width: 0px;
+    padding: 0px;
+    padding-top: 8px;
+    padding-left: 20px;
+  }
+
+  .langSelection p {
+    font-size: 1em;
+    padding: 0px 5px;
+    align-content: center;
+  }
+
+  .headingFlexContainerLeft {
+    height: 20px;
+  }
+  /*SM ICONS AND ELEMENTS*/
+
+  .tripadvisorIcon {
+    height: 2em;
+  }
+  .homeContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .fab {
+    font-size: 1.5em;
+    color: black;
+    padding-top: 2px;
+  }
+  .fa-angle-down {
+    font-size: 10rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  a {
+    font-size: 0.8em;
+  }
+  .main_logo {
+    margin-top: 2rem;
+  }
+  .homeContainer {
+    gap: 2rem;
+  }
+  .homeContainer h1 {
+    font-size: 1.5rem;
+  }
+  .fa-angle-down {
+    font-size: 3rem;
+  }
+
+  .navFooter {
+    height: 40px;
+  }
+}
